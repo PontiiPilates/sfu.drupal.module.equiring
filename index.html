@@ -70,15 +70,25 @@
 				<div class="description">Подробнее об обработке персональных данных см. в разделе <a target="_blank" href="/rules">Способы и правила оплаты услуг СФУ</a>.</div>
 			</div>
 			<br>
+<<<<<<< HEAD
+			<input type="submit" name="op" id="edit-submit" value="Оплатить банковской картой" class="form-submit">
+=======
 			<input type="submit" name="op" id="edit-submit" value="Оплатить Газпром" class="form-submit">
 			<!-- Элемент, который нужно поместить в форму -->
 			<input type="button" name="op" id="sber-submit" value="Оплатить Сбербанк" class="form-submit">
 			<!-- Элемент, который нужно поместить в форму -->
+>>>>>>> a7a38f7d7f8d553da8870646a54e33e084f37e04
 			<p style="margin-top:0.5em">Для осуществления платежа будет выполнен переход на сайт Газпромбанка.</p>
 		</div>
 	</form>
 
 	<script>
+<<<<<<< HEAD
+		$(document).ready(function(){
+			$('#sfu-pay-form').submit(function(evt){
+				evt.preventDefault();
+				alert('Ok');
+=======
 		/**
 		 * Функция для передачи данных из формы на обработчик.
 		 */
@@ -92,9 +102,15 @@
 				form = $('#sfu-pay-form').serialize();
 				// Передаем данные в обработчик.
 				window.location = 'sberpay.php?' + form;
+>>>>>>> a7a38f7d7f8d553da8870646a54e33e084f37e04
 			})
 		})
 	</script>
 
+<<<<<<< HEAD
+	<script src="sites/all/modules/custom/paysber/sberpay.js"></script>
+
+=======
+>>>>>>> a7a38f7d7f8d553da8870646a54e33e084f37e04
 </body>
 </html>
