@@ -1,3 +1,0 @@
-name = SberPay
-description = Позволяет производить оплату формы через api Сбербанка.
-core = 6.x
