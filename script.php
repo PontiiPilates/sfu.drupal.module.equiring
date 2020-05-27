@@ -51,14 +51,14 @@ $ref 			= $_SERVER['HTTP_REFERER'];
 // Значения для формирования адресов.
 
 $err 			= '?msg=err';
-$edu 			= 'http://hg.pay/services/edu';
-$internet 		= 'http://hg.pay/services/internet';
-$hostels 		= 'http://hg.pay/services/hostels';
-$courses 		= 'http://hg.pay/services/courses';
-$antiplagiat 	= 'http://hg.pay/services/antiplagiat';
-$ebook 			= 'http://hg.pay/services/ebook';
-$events 		= 'http://hg.pay/services/events';
-$other 			= 'http://hg.pay/services/other';
+$edu 			= 'https://pay.sfu-kras.ru/services/edu';
+$internet 		= 'https://pay.sfu-kras.ru/services/internet';
+$hostels 		= 'https://pay.sfu-kras.ru/services/hostels';
+$courses 		= 'https://pay.sfu-kras.ru/services/courses';
+$antiplagiat 	= 'https://pay.sfu-kras.ru/services/antiplagiat';
+$ebook 			= 'https://pay.sfu-kras.ru/services/ebook';
+$events 		= 'https://pay.sfu-kras.ru/services/events';
+$other 			= 'https://pay.sfu-kras.ru/services/other';
 
 /**
  * Сценарии редиректа и преобразования в зависимости от адресов и параметров.
