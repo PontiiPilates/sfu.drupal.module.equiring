@@ -2,9 +2,27 @@
  * Вызов функций после загрузки страницы.
  */
 $(document).ready(function(){
+	temporaryDisabled();
 	userMessage();
 	btnSendSber();
 })
+
+/**
+ * Временное отключение функции оплаты со страниц.
+ */
+function temporaryDisabled() {
+	url = String(window.location);
+	val = ['internet', 'antiplagiat', 'ebook', '&', '?'];
+	ind = 0;
+	for (i = val.length-1; i >= 0; i--) {
+		if (url.indexOf(val[i]) > -1) {
+			ind++;
+		}
+	}
+	if (ind > 0) {
+		$('.btn-container-sberbank').remove();
+	}
+}
 
 /**
  * Выводит сообщения от скрипта-обработчика формы.
